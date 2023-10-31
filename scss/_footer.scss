@@ -1,0 +1,40 @@
+.footer {
+  padding-top: 1%;
+  background: -webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%);
+
+  .footer__ico-caja {
+    display: flex;
+
+    i {
+      color: $color-iconos;
+      padding: 10px;
+
+    }
+  }
+
+  .footer__texto {
+
+    font-size: 12px;
+    font-family: $fuente ;
+    padding: 1%;
+  }
+}
+
+
+.fondo-footer {
+  background: url(../img/footer-fondo.png);
+
+  .logo {
+    width: 100px;
+  }
+  .footer__texto {
+    font-size: 16px;
+    font-family: $fuente ;
+    padding: 1%;
+    color: #ffffff;
+  }
+ 
+  .texto-color {
+    color: #ffffff;
+  }
+}

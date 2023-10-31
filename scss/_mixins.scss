@@ -1,0 +1,72 @@
+@mixin titulo-principal ($color, $font-size, $justify-content, $margin-bottom, $padding-top) {
+    color: $color;
+    font-family: 'Montserrat', sans-serif;
+    font-size: $font-size;
+    display: flex;
+    justify-content: $justify-content;
+    margin-bottom: $margin-bottom;
+    padding-top: $padding-top;
+    font-weight: 700;
+}
+
+.titilo-principal {
+    @include titulo-principal($color-titulo, 35px, center, 2px, 6%)
+}
+
+.titulo-h2 {
+    @include titulo-principal($gris-oscuro, 20px, center, 0px, 0px)
+}
+
+.titulo-secundario {
+    @include titulo-principal($gris-oscuro, 18px, start, 25px, 50px)
+}
+
+@mixin flexible ($display, $just, $align ) {
+    display: $display;
+    justify-content: $just;
+    align-items: $align;
+}
+
+.end {
+    @include flexible(flex, end, end)
+}
+
+.footer__texto {
+    @include flexible (flex, center, center)
+}
+
+@mixin texto ($color) {
+    color: $color ;
+    font-weight: 700;
+}
+
+@mixin boton ($fondo, $radius, $padding, $width, $color, $border, $margin-b, $text-align ) {
+    background: $fondo;
+    border-radius: $radius;
+    padding: $padding;
+    width: $width;
+    color: $color;
+    border: $border;
+    margin-bottom: $margin-b;
+    font-weight: 700;
+    text-align:$text-align;
+}
+
+.boton, .boton-footer {
+    @include boton (-webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%), 15px, 1%, 50%, #ffff, none, 6%, center)
+}
+.boton-slider {
+    @include boton (-webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%), 10px, 1%, 30%, #ffff, none, 6%, center)
+}
+
+
+.text-negrita {
+    @include texto($gris-oscuro-oscuro)
+}
+
+
+@mixin movil () {
+    @media screen and (max-width:480px) {
+        @content;
+    }
+}
