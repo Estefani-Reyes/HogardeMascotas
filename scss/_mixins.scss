@@ -39,9 +39,10 @@
     @include flexible(flex, end, end)
 }
 
-.footer__texto {
+.footer__texto, .flexible {
     @include flexible (flex, center, center)
 }
+
 
 @mixin texto ($color) {
     color: $color ;
@@ -78,5 +79,104 @@
 @mixin movil () {
     @media screen and (max-width:480px) {
         @content;
+    }
+}
+
+
+@mixin tablet () {
+    @media screen and (max-width:768px) {
+        @content;
+    }
+}
+@mixin tablet1 () {
+    @media screen and (max-width:1024px) {
+        @content;
+    }
+}
+
+.responsive-opcion {
+    @include movil() {
+       margin-bottom: 3%;
+    }   
+}
+.responsive-img {
+    @include movil() {
+        width: 80%;
+    }
+}
+
+.titilo-principal,
+.titulo-h2,
+.titulo-secundario,
+.titulo-secundario-p,
+.titulo-mascotas-banner,
+.letra {
+    @include movil() {
+        font-size: 20px;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+    }
+}
+
+.titulo-mascotas-banner {
+    @include movil() {
+        background-color:  rgba(16, 16, 16, 0.107);
+        padding: 3%;
+        border-radius: 1%;
+        color: $color-rosa;
+        text-align: center;
+    }
+}
+.responsive-texto {
+    @include movil() {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.reset, .container-espacio >.titilo-principal {
+    @include movil() {
+      margin: 0;
+      padding-top: 0;
+    }
+}
+
+.boton, .boton-slider {
+    @include movil() {
+    font-size: 15px;
+} 
+}
+.margin-responsive{
+      @include movil() {
+    margin-top: 10%;
+} 
+}
+.margin-responsive{
+    @include tablet1() {
+  margin-top: 10%;
+} 
+}
+
+
+.responsive-texto {
+    @include tablet() {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+}
+
+.titilo-principal {
+    @include tablet() {
+        font-size: 20px;
+        padding-left: 4%;
+        padding-right: 4%;
+        text-align: center;
+    }
+}
+.margin-responsive {
+    @include tablet1() {
+        padding-left: 10%;
+        padding-right: 10%;
     }
 }

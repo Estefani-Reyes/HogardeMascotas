@@ -60,7 +60,7 @@
   align-items: end;
 }
 
-.footer__texto {
+.footer__texto, .flexible {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,6 +94,97 @@
 .text-negrita {
   color: #656565;
   font-weight: 700;
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-opcion {
+    margin-bottom: 3%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titilo-principal,
+  .titulo-h2,
+  .titulo-secundario,
+  .titulo-secundario-p,
+  .titulo-mascotas-banner,
+  .letra {
+    font-size: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .titulo-mascotas-banner {
+    background-color: rgba(16, 16, 16, 0.107);
+    padding: 3%;
+    border-radius: 1%;
+    color: #ffa9f9;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .responsive-texto {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .reset, .container-espacio > .titilo-principal {
+    margin: 0;
+    padding-top: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .boton, .boton-slider {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .margin-responsive {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .margin-responsive {
+    margin-top: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .responsive-texto {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .titilo-principal {
+    font-size: 20px;
+    padding-left: 4%;
+    padding-right: 4%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .margin-responsive {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
 }
 
 * {
@@ -166,12 +257,26 @@
   font-family: "Montserrat", sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #D6721B;
+}
+
 .interliniadoh1 {
   line-height: 15px;
 }
 
+.letra {
+  font-size: 30px;
+}
+
+@media (min-width: 789px) {
+  .ocultar {
+    font-size: 15px;
+  }
+}
 .container-espacio {
-  padding-top: 40px;
+  padding-top: 10px;
   padding-bottom: 30px;
 }
 .container-espacio .mascotas-content {
@@ -278,6 +383,17 @@
     display: none;
   }
 }
+@media (max-width: 480px) {
+  .flexible {
+    display: flex;
+    align-items: center;
+  }
+}
+@media (min-width: 795px) {
+  .ocultar {
+    display: none;
+  }
+}
 @media (max-width: 774px) {
   .ocultar-slider {
     display: none;
@@ -296,6 +412,9 @@
   color: #35373a;
   min-height: 100vh;
   padding: 30px 40px;
+}
+.galeria-container a {
+  text-decoration: none;
 }
 .galeria-container .tz-galeria {
   padding: 40px;
