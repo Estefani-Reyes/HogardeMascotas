@@ -21,6 +21,14 @@
     @include titulo-principal($gris-oscuro, 18px, start, 25px, 50px)
 }
 
+.titulo-secundario-p {
+    @include titulo-principal($gris-oscuro, 22px, center, 25px, 50px)
+}
+
+.titulo-mascotas-banner {
+    @include titulo-principal($color-titulo, 30px, end, 25px, 50px)
+}
+
 @mixin flexible ($display, $just, $align ) {
     display: $display;
     justify-content: $just;
@@ -49,12 +57,14 @@
     border: $border;
     margin-bottom: $margin-b;
     font-weight: 700;
-    text-align:$text-align;
+    text-align: $text-align;
 }
 
-.boton, .boton-footer {
+.boton,
+.boton-footer {
     @include boton (-webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%), 15px, 1%, 50%, #ffff, none, 6%, center)
 }
+
 .boton-slider {
     @include boton (-webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%), 10px, 1%, 30%, #ffff, none, 6%, center)
 }

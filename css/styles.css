@@ -32,6 +32,28 @@
   font-weight: 700;
 }
 
+.titulo-secundario-p {
+  color: #7f7f7f;
+  font-family: "Montserrat", sans-serif;
+  font-size: 22px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
+.titulo-mascotas-banner {
+  color: #D6721B;
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+  display: flex;
+  justify-content: end;
+  margin-bottom: 25px;
+  padding-top: 50px;
+  font-weight: 700;
+}
+
 .end {
   display: flex;
   justify-content: end;
@@ -44,7 +66,8 @@
   align-items: center;
 }
 
-.boton, .boton-footer {
+.boton,
+.boton-footer {
   background: -webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%);
   border-radius: 15px;
   padding: 1%;
@@ -77,6 +100,8 @@
   margin: 0;
   padding: 0;
   box-sizing: 0;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .header .header__flexible {
@@ -99,6 +124,14 @@
 }
 .header .header__flexible .header__caja p {
   font-size: 13px;
+}
+.header .header__flexible .header__caja .redes {
+  padding: 5px;
+  border: solid 1px #D6721B;
+  border-radius: 50%;
+}
+.header .header__flexible .header__caja a {
+  margin-left: 3%;
 }
 @media (min-width: 1031px) {
   .header .header__mostrar_logo {
@@ -140,6 +173,148 @@
 .container-espacio {
   padding-top: 40px;
   padding-bottom: 30px;
+}
+.container-espacio .mascotas-content {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  opacity: 0;
+  width: 100%;
+  height: 320px;
+  padding: 50px 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+  background-color: #fcb3c5;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  -webkit-transform: translateY(110px) rotateX(-90deg);
+  -moz-transform: translateY(110px) rotateX(-90deg);
+  -ms-transform: translateY(110px) rotateX(-90deg);
+  -o-transform: translateY(110px) rotateX(-90deg);
+  transform: translateY(110px) rotateX(-90deg);
+}
+.container-espacio .mascotas-content h3 {
+  font-size: 15px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+.container-espacio .mascotas-content p,
+.container-espacio .mascotas-content a {
+  font-size: 13px;
+  color: #656565;
+  margin: 0;
+}
+.container-espacio .mascotas-box {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px;
+  perspective: 1000px;
+  -webkit-perspective: 1000px;
+}
+.container-espacio .mascotas-box:hover .mascotas-icon {
+  opacity: 0;
+  -webkit-transform: translateY(-110px) rotateX(90deg);
+  -moz-transform: translateY(-110px) rotateX(90deg);
+  -ms-transform: translateY(-110px) rotateX(90deg);
+  -o-transform: translateY(-110px) rotateX(90deg);
+  transform: translateY(-110px) rotateX(90deg);
+}
+.container-espacio .mascotas-box:hover .mascotas-content {
+  opacity: 1;
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+.container-espacio .mascotas-box .naranja {
+  background: -webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%);
+}
+.container-espacio .mascotas-box .mascotas-icon {
+  width: 100%;
+  height: 320px;
+  padding: 50px 20px;
+  text-align: center;
+  transition: all 0.5s ease;
+}
+.container-espacio .mascotas-box .mascotas-icon .icono-imagen-mascotas {
+  width: 100px;
+}
+.container-espacio .mascotas-box .mascotas-icon .front-content {
+  position: relative;
+  top: 80px;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.container-espacio .mascotas-box .mascotas-icon .front-content i {
+  font-size: 28px;
+  color: #fff;
+  font-weight: normal;
+}
+.container-espacio .mascotas-box .mascotas-icon .front-content h3 {
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+}
+
+.fondo-gatos {
+  margin-top: 10%;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: url(../img/footer-fondo.png);
+  background-size: cover;
+}
+
+@media (min-width: 775px) {
+  .banner-respnsivo {
+    display: none;
+  }
+}
+@media (max-width: 774px) {
+  .ocultar-slider {
+    display: none;
+  }
+  .banner-respnsivo {
+    background: url(../img/slider-barkcelona-04.jpg);
+    background-size: cover;
+    padding: 20px;
+  }
+  .responsivo {
+    display: none;
+  }
+}
+.galeria-container {
+  background-color: #fff;
+  color: #35373a;
+  min-height: 100vh;
+  padding: 30px 40px;
+}
+.galeria-container .tz-galeria {
+  padding: 40px;
+}
+.galeria-container .tz-galeria .box-img img {
+  width: 100%;
+  border-radius: 0;
+  position: relative;
+  padding: 2%;
+}
+
+.colorw {
+  color: #fff;
+}
+
+.fondo-claro {
+  background-color: rgba(244, 160, 5, 0.107);
+  padding: 3%;
+  border-radius: 1%;
 }
 
 .contacto img {
@@ -236,23 +411,16 @@
   margin-bottom: 100px;
 }
 
-.tarjeta-mascotas {
-  text-align: center;
-  padding: 32px;
-  box-shadow: 0 0 20px 10px rgba(225, 119, 43, 0.05);
-  border: 0;
+.benner-quienes-somos {
+  padding: 15% 10%;
+  background: url(../img/slider-barkcelona-04.jpg);
+  background-size: cover;
 }
 
-.tarjeta-img {
-  border: 0;
-  background-color: #ffff9e;
-}
-
-.tarjeta {
-  display: flex;
-  justify-content: center;
+.card {
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .footer {
@@ -286,6 +454,12 @@
 }
 .fondo-footer .texto-color {
   color: #ffffff;
+}
+.fondo-footer .nav-link {
+  color: #fff;
+}
+.fondo-footer .text-muted {
+  color: #fff !important;
 }
 
 /*# sourceMappingURL=styles.css.map */

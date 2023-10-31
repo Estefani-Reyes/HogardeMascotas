@@ -27,14 +27,23 @@
   .logo {
     width: 100px;
   }
+
   .footer__texto {
     font-size: 16px;
     font-family: $fuente ;
     padding: 1%;
     color: #ffffff;
   }
- 
+
   .texto-color {
     color: #ffffff;
+  }
+
+  .nav-link {
+    color: #fff
+  }
+
+  .text-muted {
+    color: #fff !important;
   }
 }

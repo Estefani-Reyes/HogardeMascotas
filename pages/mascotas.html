@@ -11,8 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>¿Quiénes
-        Somos?</title>
+    <title>Adoptar Gatos</title>
     <link rel="shortcut icon" href="../img/favicon-hogar-de-mascotas.ico" type="image/x-icon">
 </head>
 <header class="header">
@@ -52,11 +51,11 @@
         </div>
         <div class="header__caja header__redes col">
             <a href="https://www.youtube.com/watch?v=Jv1iolzbvZg&ab_channel=CulturaColectiva" target="_blank"><i
-                    class="fa-brands fa-youtube redes"></i></a>
+                    class="fa-brands fa-youtube"></i></a>
             <a href="https://m.facebook.com/groups/category/animals/?locale=es_LA" target="_blank"><i
-                    class="fa-brands fa-facebook redes"></i></a>
-            <a href="https://twitter.com/x" target="_blank"> <i class="fa-brands fa-twitter redes"></i></a>
-            <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram redes"></i></a>
+                    class="fa-brands fa-facebook"></i></a>
+            <a href="https://twitter.com/x" target="_blank"> <i class="fa-brands fa-twitter"></i></a>
+            <a href="https://www.instagram.com/" target="_blank"> <i class="fa-brands fa-instagram"></i></a>
         </div>
     </div>
     <nav class="navbar navbar-expand-lg header__menu">
@@ -75,13 +74,13 @@
                         <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
                     </li>
                     <li class="nav-item header__a">
-                        <a class="nav-link active" aria-current="page" href="#">¿Quiénes
+                        <a class="nav-link" aria-current="page" href="./quienes-somos.html">¿Quiénes
                             Somos?</a>
                     </li>
-                    <li class="nav-item header__a">
-                        <a class="nav-link" href="./mascotas.html">Mascotas</a>
+                    <li class="nav-item header__a ">
+                        <a class="nav-link active" aria-current="page" href="#">Mascotas</a>
                     </li>
-                    </li>
+
                     <li class="nav-item header__a">
                         <a class="nav-link" href="./como-adoptar.html">¿Como Adoptar?</a>
                     </li>
@@ -105,54 +104,153 @@
 </header>
 
 <body>
-    <div class="benner-quienes-somos">
-        <h2 class="titulo-mascotas-banner"> ¿Quiénes
-            Somos?</h2>
-    </div>
-    <main class="container">
-
-        <h1 class="titilo-principal"> ¡Bienvenidos a Hogar de Mascota!</h1>
-        <div class="row">
-            <div class="col-lg-5 col-md-12 col-sm-12 pt-5 ms-5">
-                <h2 class="titulo-secundario">Acerca de Nosotros</h2>
-                <p class="lead">Hogar Mascota, tu comunidad dedicada a los amantes de los perros y gatos y a promover la
-                    adopción
-                    responsable. </p>
-                <hr class="y-4">
-                <p>Somos una
-                    organización comprometida con el bienestar de los animales y nos esforzamos por brindarles a
-                    nuestros amigos de
-                    cuatro patas un hogar amoroso y seguro.</p>
-                <p>En nuestra <a href="./adoptar-gatos.html">página web,</a> encontrarás un catálogo actualizado de
-                    mascotas disponibles para adopción.
-                </p>
-                <p>Cada uno de los candidatos cuenta con una ficha detallada que te permitirá conocer su historia,
-                    personalidad y necesidades.</p>
-                <p>Creemos firmemente en la importancia de encontrar la mejor compañía para tu familia, por lo que
-                    proporcionamos toda la información necesaria para que el proceso de adopción sea más fácil y
-                    gratificante.</p>
-                <p class="mb-5">
-                    En Hogar Mascota nos preocupamos por el bienestar de tu mascota y sabemos lo importante que es para
-                    ti. Por eso, también encontrarás información sobre veterinarios profesionales y el control de
-                    vacunación, para que puedas mantener a tu fiel amigo sano y feliz.
-                </p>
-                <a class="btn boton btn-lg mb-5" href="./mascotas.html">Ver Mascotas</a>
-            </div>
-            <div class="col-lg-5 col-md-12 col-sm-12 mt-5 ms-5">
-                <img class="mt-5" src="../img/mujer-perro.png" alt="">
-
-            </div>
-            <h3 class="titulo-h2 mb-3">
-                ¡Adopta en Hogar Mascota y sé parte de nuestra comunidad comprometida con el bienestar animal!
-            </h3>
-            <p class="text-center mb-5">Juntos,
-                podemos hacer la diferencia en la vida de estos maravillosos seres que nos brindan amor
-                incondicional.</p>
+    <main>
+        <div class="benner-quienes-somos">
+            <h2 class="titulo-mascotas-banner"> Mascotas en
+                busca de nuevo hogar</h2>
         </div>
     </main>
+    <section class="container">
+        <h1 class="pt-5 titilo-principal ">ADOPCIÓN DE PERROS Y GATOS</h1>
+        <p class="titulo-secundario-p">Busca por las caracteristicas de tu mejor amigo </p>
+        <div class="row ">
+
+            <div class="col-md-2 ">
+                <label class="text-center"> Perros
+                    <input name="petSubtype" type="radio" value="1">
+                </label>
 
 
-    <div class="fondo-footer mt-5">
+            </div>
+            <div class="col-md-2 ">
+
+                <label class="text-center"> gatos
+                    <input name="petSubtype" type="radio" value="1">
+                </label>
+
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option value="" selected="selected">¿Edad?</option>
+                    <option label="Menos de un año" value="1">Menos de un año</option>
+                    <option label="De 1 a 2 años" value="2">De 1 a 2 años</option>
+                    <option label="De 3 a 4 años" value="3">De 3 a 4 años</option>
+                    <option label="Más de 5 años" value="4">Más de 5 años</option>
+                </select>
+
+
+            </div>
+
+            <div class="col-md-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option value="" selected="selected">¿Que Tamaño?</option>
+                    <option label="Miniatura" value="number:3">Miniatura</option>
+                    <option label="Pequeño" value="number:4">Pequeño</option>
+                    <option label="Mediano-Pequeño" value="number:5">Mediano-Pequeño</option>
+                    <option label="Mediano-Grande" value="number:6">Mediano-Grande</option>
+                    <option label="Grande" value="number:7">Grande</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <select class="form-select" aria-label="Default select example">
+                    <option value="" selected="selected">¿Genero?</option>
+                    <option label="Macho" value="number:8">Macho</option>
+                    <option label="Hembra" value="number:9">Hembra</option>
+                </select>
+            </div>
+            <div class="col-md-2">
+                <input type="text" placeholder="Por nombre" class="form-control">
+            </div>
+        </div>
+
+    </section>
+    <section class="container pt-5">
+        <div class="row ">
+
+
+            <div class="col-md-4 ">
+
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/paz.jpeg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Paz</h5>
+                        <p class="card-text">Hembra 6 meses</p>
+                        <a href="./img/paz.jpeg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 ">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/samir.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Samari</h5>
+                        <p class="card-text">Hembra 4 años</p>
+                        <a href="./img/samir.jpg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 ">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/michi.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Michi</h5>
+                        <p class="card-text">Hembra 6 meses</p>
+                        <a href="./img/michi.jpg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/lulo.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Lulo</h5>
+                        <p class="card-text">Macho 4 meses</p>
+                        <a href="./img/lulo.jpg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 ">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/tobby.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Tobby</h5>
+                        <p class="card-text">Macho 3 años</p>
+                        <a href="./img/tobby.jpg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-4 ">
+
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="../img/kora.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Kora</h5>
+                        <p class="card-text">Macho 1 año</p>
+                        <a href="./img/kora.jpg" class="btn boton">Adoptar</a>
+                    </div>
+                </div>
+
+            </div>
+    </section>
+
+    <h2 class="h2-centrado titulo-h2 mt-5 mb-5">Adopta en hogares de mascotas y salva vidas</h2>
+    </main>
+
+    <div class="fondo-footer">
         <div class="container ">
             <footer class="pt-5 ">
                 <div class="row">

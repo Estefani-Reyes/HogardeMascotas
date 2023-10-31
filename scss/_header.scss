@@ -24,22 +24,32 @@
                 font-size: 13px;
             }
 
+            .redes {
+                padding: 5px;
+                border: solid 1px $color-iconos;
+                border-radius: 50%;
+            }
+
+            a {
+                margin-left: 3%;
+            }
         }
 
     }
- @media (min-width:1031px) {
-        .header__mostrar_logo
-        {
+
+    @media (min-width:1031px) {
+        .header__mostrar_logo {
             display: none;
-            
+
         }
     }
+
     @media (max-width: 1030px) {
         .header__ocultar {
             display: none;
         }
     }
-   
+
 
     .header__menu,
     .dropdown-menu {

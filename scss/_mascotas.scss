@@ -1,17 +1,13 @@
-.tarjeta-mascotas {
-    text-align: center;
-    padding: 32px;
-    box-shadow: 0 0 20px 10px rgba(225, 119, 43, 0.05);
-    border: 0;
-}
-.tarjeta-img {
-    border: 0;
-    background-color: #ffff9e;
+.benner-quienes-somos {
+    padding: 15% 10%;
+    background: url(../img/slider-barkcelona-04.jpg);
+    background-size: cover;
+
 }
 
-.tarjeta {
-    display: flex;
-    justify-content: center;
+.card {
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
+
 }
