@@ -95,12 +95,12 @@
 }
 
 .responsive-opcion {
-    @include movil() {
+    @include tablet() {
        margin-bottom: 3%;
     }   
 }
 .responsive-img {
-    @include movil() {
+    @include tablet() {
         width: 80%;
     }
 }
@@ -132,6 +132,12 @@
     @include movil() {
         padding-left: 10%;
         padding-right: 10%;
+    }
+}
+
+.fondo-footer >.container {
+    @include tablet() {
+        background-color: $gris-oscuro-oscuro;
     }
 }
 
