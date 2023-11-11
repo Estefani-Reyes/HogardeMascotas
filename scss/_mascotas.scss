@@ -11,6 +11,9 @@
     margin-bottom: 30px;
     width: 18rem;
     font-size: 18px;
+    &:hover {
+        background-color: $color-fondo;
+    }
     h5 {
         font-size: 25px;
     }
@@ -23,6 +26,7 @@
 }
 .hembra {
    background-color: $color-rosa;
+   font-weight: 700;
    }
    .macho {
     background-color: $gris-oscuro-oscuro;

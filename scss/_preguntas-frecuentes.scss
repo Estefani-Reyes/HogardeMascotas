@@ -1,0 +1,43 @@
+.preguntas-frecuentes{
+    .tarjeta-pregunta {
+        padding: 30px 45px;
+        margin-bottom: 35px;
+        background-color:$color-fondo;
+        border-radius: 10px;
+        box-shadow: 0 0px 30px rgb(0 0 0 / 10%);
+       
+        .flex {
+            display: flex;
+         align-items: center;
+            h2 {
+                padding-left: 10px;
+                color: $gris-oscuro-oscuro;
+                font-size: 25px;
+            }
+            img {
+                width: 13%;
+                height: 8%;
+                padding-right: 10px;
+                object-fit: cover;  
+            }    
+        }
+        @media (max-width: 774px) {
+            .flex > h2 {
+                font-size: 18px;
+            }
+            .resposive-p {
+                font-size: 13px;
+            }
+        }
+    }
+    .img-pregunta {
+        display: flex;
+        justify-content: center;
+      img{
+        width: 70%;
+        margin-bottom: 4%;
+        object-fit: cover;
+      }
+    
+    }
+}

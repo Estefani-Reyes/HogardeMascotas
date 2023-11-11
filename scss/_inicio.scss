@@ -3,9 +3,33 @@
 * {
     font-family: 'Montserrat', sans-serif;
 }
+/*estilos barra desplazamiento*/
+/* Works on Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: $color-titulo $color-rosa;
+  }
+  
+  /* Works on Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 17px;
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: -webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%);
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background-color:$color-titulo;
+    border-radius: 20px;
+    border: 5px solid $color-rosa;
+  }
+
+
 a {
     text-decoration: none;
-    color: $color-titulo;
+    color: $gris-oscuro-oscuro;
+    font-weight: 700;
 }
 
 .interliniadoh1 {
@@ -139,6 +163,7 @@ a {
     padding-bottom: 40px;
     background: url(../img/footer-fondo.png);
     background-size: cover;
+    margin-right: 0;
 
 }
 
@@ -163,7 +188,7 @@ a {
     .ocultar-slider {
         display: none;
     }
-
+   
     .banner-respnsivo {
         background: url(../img/slider-barkcelona-04.jpg);
         background-size: cover;
@@ -180,6 +205,10 @@ a {
     color: #35373a;
     min-height: 100vh;
     padding: 30px 40px;
+    .titulo-secundario-p:hover {
+        font-weight: 700;
+        color: $color-rosa;
+    }
     a {
         text-decoration: none;
     }
@@ -208,3 +237,7 @@ a {
     padding: 3%;
     border-radius: 1%;
 }
+.img-cover {
+    object-fit:cover;
+}
+

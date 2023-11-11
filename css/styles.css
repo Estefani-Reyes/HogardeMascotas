@@ -158,6 +158,12 @@
   }
 }
 
+@media screen and (max-width: 768px) {
+  .boton-slider {
+    font-size: 15px;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .margin-responsive {
     margin-top: 10%;
@@ -263,9 +269,32 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/*estilos barra desplazamiento*/
+/* Works on Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D6721B #ffa9f9;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 17px;
+}
+
+*::-webkit-scrollbar-track {
+  background: -webkit-linear-gradient(0deg, #f5c94c, #ffa9f9 100%);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: #D6721B;
+  border-radius: 20px;
+  border: 5px solid #ffa9f9;
+}
+
 a {
   text-decoration: none;
-  color: #D6721B;
+  color: #656565;
+  font-weight: 700;
 }
 
 .interliniadoh1 {
@@ -382,6 +411,7 @@ a {
   padding-bottom: 40px;
   background: url(../img/footer-fondo.png);
   background-size: cover;
+  margin-right: 0;
 }
 
 @media (min-width: 775px) {
@@ -419,6 +449,10 @@ a {
   min-height: 100vh;
   padding: 30px 40px;
 }
+.galeria-container .titulo-secundario-p:hover {
+  font-weight: 700;
+  color: #ffa9f9;
+}
 .galeria-container a {
   text-decoration: none;
 }
@@ -440,6 +474,10 @@ a {
   background-color: rgba(244, 160, 5, 0.107);
   padding: 3%;
   border-radius: 1%;
+}
+
+.img-cover {
+  object-fit: cover;
 }
 
 .contacto img {
@@ -549,6 +587,9 @@ a {
   width: 18rem;
   font-size: 18px;
 }
+.card:hover {
+  background-color: #ffd595;
+}
 .card h5 {
   font-size: 25px;
 }
@@ -560,12 +601,53 @@ a {
 
 .hembra {
   background-color: #ffa9f9;
+  font-weight: 700;
 }
 
 .macho {
   background-color: #656565;
   color: azure;
   font-weight: 700;
+}
+
+.preguntas-frecuentes .tarjeta-pregunta {
+  padding: 30px 45px;
+  margin-bottom: 35px;
+  background-color: #ffd595;
+  border-radius: 10px;
+  box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
+}
+.preguntas-frecuentes .tarjeta-pregunta .flex {
+  display: flex;
+  align-items: center;
+}
+.preguntas-frecuentes .tarjeta-pregunta .flex h2 {
+  padding-left: 10px;
+  color: #656565;
+  font-size: 25px;
+}
+.preguntas-frecuentes .tarjeta-pregunta .flex img {
+  width: 13%;
+  height: 8%;
+  padding-right: 10px;
+  object-fit: cover;
+}
+@media (max-width: 774px) {
+  .preguntas-frecuentes .tarjeta-pregunta .flex > h2 {
+    font-size: 18px;
+  }
+  .preguntas-frecuentes .tarjeta-pregunta .resposive-p {
+    font-size: 13px;
+  }
+}
+.preguntas-frecuentes .img-pregunta {
+  display: flex;
+  justify-content: center;
+}
+.preguntas-frecuentes .img-pregunta img {
+  width: 70%;
+  margin-bottom: 4%;
+  object-fit: cover;
 }
 
 .footer {
@@ -604,8 +686,23 @@ a {
 .fondo-footer .nav-link {
   color: #fff;
 }
+.fondo-footer .nav-link:hover {
+  font-weight: 700;
+}
 .fondo-footer .text-muted {
   color: #fff !important;
+}
+@media (max-width: 774px) {
+  .fondo-footer .footer__texto {
+    background-color: #D6721B;
+  }
+  .fondo-footer i {
+    color: #D6721B;
+  }
+  .fondo-footer .tcolor {
+    color: #ffa9f9;
+    font-weight: 700;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

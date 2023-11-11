@@ -43,8 +43,24 @@
   .nav-link {
     color: #fff
   }
+  .nav-link:hover {
+    font-weight: 700;
+  }
 
   .text-muted {
     color: #fff !important;
+  }
+  @media (max-width: 774px) {
+    .footer__texto {
+      background-color: $color-titulo;
+    }
+    i {
+      color: $color-iconos;
+    }
+   
+  .tcolor {
+    color: $color-rosa;
+    font-weight: 700;
+  }
   }
 }

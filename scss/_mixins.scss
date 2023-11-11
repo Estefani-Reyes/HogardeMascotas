@@ -153,6 +153,12 @@
     font-size: 15px;
 } 
 }
+
+.boton-slider {
+    @include tablet() {
+    font-size: 15px;
+} 
+}
 .margin-responsive{
       @include movil() {
     margin-top: 10%;
