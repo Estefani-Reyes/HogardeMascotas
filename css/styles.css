@@ -613,7 +613,7 @@ a {
 .preguntas-frecuentes .tarjeta-pregunta {
   padding: 30px 45px;
   margin-bottom: 35px;
-  background-color: #ffd595;
+  background-color: rgba(255, 219, 166, 0.3294117647);
   border-radius: 10px;
   box-shadow: 0 0px 30px rgba(0, 0, 0, 0.1);
 }
@@ -700,7 +700,6 @@ a {
     color: #D6721B;
   }
   .fondo-footer .tcolor {
-    color: #ffa9f9;
     font-weight: 700;
   }
 }
